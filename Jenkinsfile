@@ -13,6 +13,8 @@ pipeline {
                 sh 'mvn test'
                 sh 'mvn compile'
                 sh 'printenv'
+                sh 'ls'
+                sh 'pwd'
             }
         }
     }
