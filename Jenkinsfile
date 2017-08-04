@@ -17,6 +17,11 @@ pipeline {
                 sh 'pwd'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
     }
     post {
         always {
