@@ -1,5 +1,6 @@
 package com.playday.jenkinsPlayBoot;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +12,11 @@ public class JenkinsPlayBootApplicationTests {
 
 	@Test
 	public void contextLoads() {
+	}
+
+	@Test
+	public void failingTest() {
+		Assert.assertTrue(false);
 	}
 
 }
