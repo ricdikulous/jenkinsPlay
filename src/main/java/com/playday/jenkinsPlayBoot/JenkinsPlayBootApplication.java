@@ -13,7 +13,7 @@ public class JenkinsPlayBootApplication {
 
 	@RequestMapping("/")
 	public String home() {
-		return "Hello World!";
+		return "Hello World! PR 1";
 	}
 
 	public static void main(String[] args) {
