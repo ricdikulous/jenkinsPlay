@@ -4,7 +4,7 @@ pipeline {
     environment {
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
-        SECRET_TEXT  = credentials(SECRET_TEXT)
+        SECRET_TEXT  = credentials('SECRET_TEXT')
     }
 
     stages {
