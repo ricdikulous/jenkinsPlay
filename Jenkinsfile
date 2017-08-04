@@ -17,6 +17,11 @@ pipeline {
                 sh 'pwd'
             }
         }
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing'
